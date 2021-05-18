@@ -16,18 +16,12 @@ class App extends React.Component {
         key:''
       }
     }
-    this.handleInput =this.handleInput.bind(this);
     this.addItem =this.addItem.bind(this);
+    this.handleInput =this.handleInput.bind(this);
     this.deleteItem =this.deleteItem.bind(this);
+    this.setUpdate =this.setUpdate.bind(this);
   }
-  handleInput(e){
-    this.setState({
-      currentItem:{
-        text:e.target.value,
-        key:Date.now()
-      }
-    })
-  }
+
   addItem(e){
     e.preventDefault();
     const newItem = this.state.currentItem;
@@ -35,7 +29,7 @@ class App extends React.Component {
     if(newItem.text !==''){
       const items = [...this.state.items, newItem];
       this.setState ({
-        items:items,
+        items: items,
         currentItem:{
           text:'',
           key:''
@@ -43,12 +37,35 @@ class App extends React.Component {
       })
     }
   }
+
+  handleInput(e){
+    this.setState({
+      currentItem:{
+        text:e.target.value,
+        key: Date.now()
+      }
+    })
+  }
+
   deleteItem(key){
     const filteredItems = this.state.items.filter(item => 
       item.key !==key);
       this.setState({
         items:filteredItems
       })
+  }
+  setUpdate (text, key) {
+    console.log('items:'+this.state.items);
+    const items = this.state.items;
+    items.map(item => {
+      if(item.key===key){
+        console.log(item.key+''+key)
+        item.text= text;
+      }
+    })
+    this.setState({
+      items:items
+    })
   }
 
   render() {
@@ -59,8 +76,9 @@ class App extends React.Component {
             <input type = 'text' placeholder = "Enter items to do!" value={this.state.currentItem.text} onChange={this.handleInput}/> 
               <button type = 'submit'> Add item </button> 
           </form> 
+          <p>{this.state.text}</p>
+        <ListItems items={this.state.items}   deleteItem = {this.deleteItem} setUpdate ={this.setUpdate} />
         </header> 
-        <ListItems items={this.state.items}   deleteItem = {this.deleteItem}></ListItems>
       </div>
     );
   }
