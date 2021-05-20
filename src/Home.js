@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+<<<<<<< Updated upstream
 //import './App.css';
 import ListItems from './Listitems'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -87,6 +88,8 @@ library.add(faTrash);
 
 //  export default Todo;
 
+=======
+>>>>>>> Stashed changes
 const GridWrapper = styled.div`
   display: grid;
   grid-gap: 10px;
@@ -96,10 +99,18 @@ const GridWrapper = styled.div`
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(25px, auto);
 `;
+<<<<<<< Updated upstream
 
 export const Todo = (props) => (
+=======
+export const Home = (props) => (
+>>>>>>> Stashed changes
   <GridWrapper>
     <p>This is a paragraph and I am writing on the home page</p>
     <p>This is another paragraph, hi hey hello whatsup yo</p>
   </GridWrapper>
+<<<<<<< Updated upstream
 )
+=======
+)
+>>>>>>> Stashed changes
