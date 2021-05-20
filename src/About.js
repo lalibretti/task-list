@@ -1,7 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-
+import styled from 'styled-components' 
 
  const GridWrapper = styled.div`
    @import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
@@ -15,9 +13,8 @@ body {
 }
 
 h1 {
-  color: rgb(27,112,137);
+  color: #ffff;
   font-weight: bolder;
-  
 }
 
 .App {
@@ -34,7 +31,6 @@ form {
   min-height: 400px;
   width: 500px;
   margin: 40px auto;
-  
 }
 
 .formRow {
@@ -51,7 +47,6 @@ background-color: rgb(27,112,137);
   font-size: 18px;
   border-radius: 10px;
   color: #ffff;
-
 }
 
 .formInput:focus {
@@ -101,21 +96,12 @@ background-color: rgb(27,112,137);
   padding: 0;
 }
 
-#notifyToast {
-  color: #fff;
-  border-radius: 6px;
-  width: 200px;
-  margin-left: 75px;
-  background-color: #21ce99;
-  background-color: var(--green);
-}
 
 .submit-btn {
   background-color: #040d14;
   background-color: var(--dark);
-  
   background-color: rgb(202,156,24);
-  padding: 15px 50px;
+  padding: 15px 30px;
   border: 2px solid;
   border-radius: 10px;
   margin-bottom: 25px;
@@ -148,7 +134,6 @@ background-color: rgb(27,112,137);
   }
 }
  `; 
-
 
  export const Contact = () => (
    <GridWrapper>

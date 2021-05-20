@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-//import './App.css';
+import './App.css';
 import ListItems from './Listitems'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
@@ -71,6 +71,7 @@ library.add(faTrash);
   
 //     render() {
 //       return ( 
+
 //         <div className = 'Todo'>
 //           <header>
 //             <form id = "to-do-form"onSubmit={this.addItem}>
@@ -81,25 +82,47 @@ library.add(faTrash);
 //           <ListItems items={this.state.items}   deleteItem = {this.deleteItem} setUpdate ={this.setUpdate} />
 //           </header> 
 //         </div>
+//         </GridWrapper>
 //       );
 //     }
 //   }
 
 //  export default Todo;
 
-const GridWrapper = styled.div`
-  display: grid;
-  grid-gap: 10px;
-  margin-top: 1em;
-  margin-left: 6em;
-  margin-right: 6em;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(25px, auto);
-`;
+// const GridWrapper = styled.div`
+//   display: grid;
+//   margin-top: 1em;
+//   margin-left: 6em;
+//   margin-right: 6em;  
+//   grid-auto-rows: minmax(25px, auto);
+// `;
 
-export const Todo = (props) => (
-  <GridWrapper>
-    <p>This is a paragraph and I am writing on the home page</p>
-    <p>This is another paragraph, hi hey hello whatsup yo</p>
-  </GridWrapper>
-)
+// export const Todo = (props) => (
+//   <GridWrapper>
+//  <div className= 'App'> <div className='container'>
+//         <div className='row'>
+//           <div className='col-12 text-center'>
+//             <div className='contactForm'>
+//             <h1>To Do List</h1>
+//               <form id='to-do-form' noValidate >
+//                 {/* Row 2 of form */}
+//                 <div className='row formRow'>
+//                   <div className='col'>
+//                     <input type='text'
+//                       name='subject'
+//                       className='form-control formInput'
+//                       placeholder='Enter items to do!'
+//                     ></input>
+//                   </div>
+//                 </div>
+//                 <button className='submit-btn' type='submit'>
+//                   Submit
+//                 </button>
+//               </form>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </GridWrapper>
+// )

@@ -18,7 +18,7 @@ function App() {
     <NavigationBar />
     <Switch>
     <Route exact path="/" component={Todo} />
-  <Route path="/About" component={Contact} />
+    <Route path="/About" component={Contact} />
 </Switch>
   </Router>
 </React.Fragment>
