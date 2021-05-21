@@ -5,7 +5,7 @@ import styled from 'styled-components'
    @import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
 
 body {
-  font-family: Poppins;
+  font-family: roboto;
   background-color: #9266ff;;
   background: var(--dark);
   line-height: 26px;
@@ -31,6 +31,7 @@ form {
   min-height: 400px;
   width: 500px;
   margin: 40px auto;
+  border-radius: 10px;
 }
 
 .formRow {
@@ -67,7 +68,6 @@ background-color: rgb(27,112,137);
 .formInput::placeholder {
   color: #ffff;
   opacity: 1;
-  font-weight: bolder;
 }
 
 .formInput:focus::-webkit-input-placeholder {
@@ -83,8 +83,7 @@ background-color: rgb(27,112,137);
 }
 
 .formInput:focus::placeholder {
-    cursor: pointer;
-  font-weight: bolder;
+  cursor: pointer;
   color: #ffff;
   opacity: 1;
 }
@@ -101,7 +100,6 @@ background-color: rgb(27,112,137);
   background-color: #040d14;
   background-color: var(--dark);
   background-color: rgb(202,156,24);
-  padding: 15px 30px;
   border: 2px solid;
   border-radius: 10px;
   margin-bottom: 25px;

@@ -86,7 +86,6 @@ class Todo2 extends React.Component {
     }
   }
 
-//  export default Todo;
 
 const GridWrapper = styled.div`
   display: grid;
@@ -100,6 +99,5 @@ const GridWrapper = styled.div`
 export const Todo = (props) => (
   <GridWrapper>
   <Todo2></Todo2>
- 
   </GridWrapper>
 )
