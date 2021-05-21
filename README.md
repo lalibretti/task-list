@@ -21,6 +21,7 @@ Featuring html, css, javascript and REACT!
 - deleteItem
 
 ## Ideas for Improvement 
--Form submission functionality
--Sorting for todo items status 
+- Form submission functionality
+- Sorting for todo items status 
+- Update styling 
 
