@@ -9,6 +9,27 @@ header {
   margin: 40px auto;
   border-radius: 10px;
 }
+
+
+/* @media only screen and (min-width: 600px) {
+  .container{ 
+    margin: 0 auto;
+    display: grid;
+  }
+  .row {
+    grid-template-columns: repeat(3, 0fr);
+  }
+}
+@media only screen and (min-width: 900px) {
+  .container{ 
+    margin: 0 auto;
+    display: grid;
+  }
+  .row {
+    grid-template-columns: repeat(2, 0fr);
+  }
+} */
+
 #to-do-form input {
   background-color: rgb(27,112,137);
   border: 0;

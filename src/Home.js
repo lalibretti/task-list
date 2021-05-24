@@ -73,13 +73,19 @@ class Todo2 extends React.Component {
       return ( 
         <div className = 'Todo'>
           <header>
+          <div class='container'>
             <form id = "to-do-form"onSubmit={this.addItem}>
+            <div class= 'row'>
               <input type = 'text' placeholder = "Enter items to do!" value={this.state.currentItem.text} onChange={this.handleInput}/> 
-                <button type = 'submit'> Add item </button> 
+            </div>
+              <div class= 'row'>
+                  <button type = 'submit'> Add item </button> 
+              </div>
             </form> 
+          </div>
             <p>{this.state.text}</p>
-          <ListItems items={this.state.items}   deleteItem = {this.deleteItem} setUpdate ={this.setUpdate} />
-          </header> 
+              <ListItems items={this.state.items}   deleteItem = {this.deleteItem} setUpdate ={this.setUpdate} />
+            </header>
         </div>
        
       );
